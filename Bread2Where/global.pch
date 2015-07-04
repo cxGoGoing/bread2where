@@ -1,0 +1,36 @@
+
+/*
+
+ Taget setting search : prefix
+ Prefix Header配置中增加 $(SRCROOT)/$(PROJECT_NAME)/global.pch
+ 
+ */
+
+#ifndef __HD_2__global_pch
+#define __HD_2__global_pch
+
+#ifdef __OBJC__
+#pragma mark 引入类头文件
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#import "AFNetworking.h"
+#import "NSDate+Extension.h"
+#import "UIImageView+WebCache.h"
+#import "REIMainNavigationController.h"
+#import "MJExtension.h"
+#import "UIView+QFExt.h"
+#import "RequestUrl.h"
+#import "REIBaseFooter.h"
+#import "UIImageView+ProgressView.h"
+#import "SVProgressHUD.h"
+#define MAIN_SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define MAIN_SCREEN_HEIGHT  [UIScreen mainScreen].bounds.size.height
+#define CLAZZ_STR NSStringFromClass([self class]) 
+#define USEFUL_COLOR1 [UIColor colorWithRed:42/255.0 green:152/255.0 blue:171/255.0 alpha:1]
+#define UMENG_SHARE_APPID @"5580039667e58e9e15000e9f"
+#define DescFont [UIFont systemFontOfSize:13]
+#define Arial_BoldItalicMT @"Arial-BoldItalicMT"
+#endif
+#endif

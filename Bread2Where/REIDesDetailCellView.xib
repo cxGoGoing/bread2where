@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="vKE-r4-fIL" customClass="REIDesDetailCellView">
+            <rect key="frame" x="0.0" y="0.0" width="193" height="164"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="193" height="164"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xl9-aQ-S8E">
+                        <rect key="frame" x="0.0" y="0.0" width="193" height="164"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="Xl9-aQ-S8E" firstAttribute="leading" secondItem="vKE-r4-fIL" secondAttribute="leading" id="93n-iQ-gJW"/>
+                <constraint firstAttribute="trailing" secondItem="Xl9-aQ-S8E" secondAttribute="trailing" id="TrV-z9-YK1"/>
+                <constraint firstAttribute="bottom" secondItem="Xl9-aQ-S8E" secondAttribute="bottom" id="jTm-2x-X4p"/>
+                <constraint firstItem="Xl9-aQ-S8E" firstAttribute="top" secondItem="vKE-r4-fIL" secondAttribute="top" id="vCR-zn-znG"/>
+            </constraints>
+            <size key="customSize" width="193" height="164"/>
+            <connections>
+                <outlet property="img" destination="Xl9-aQ-S8E" id="8Zd-lv-2Oe"/>
+            </connections>
+            <point key="canvasLocation" x="344.5" y="170"/>
+        </collectionViewCell>
+    </objects>
+</document>

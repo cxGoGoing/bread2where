@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="REIHotRecItemCell" id="bVb-6d-zcx" customClass="REIHotRecItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="126" height="41"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="126" height="41"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwn-aj-9ZY">
+                        <rect key="frame" x="8" y="9" width="110" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="x63-oG-XDd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                        <state key="normal" title="Button">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="hotRecBtnTouch:" destination="bVb-6d-zcx" eventType="touchUpInside" id="cWM-0H-Cbe"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fwn-aj-9ZY" secondAttribute="trailing" constant="8" id="1Li-yU-s5j"/>
+                <constraint firstItem="fwn-aj-9ZY" firstAttribute="leading" secondItem="bVb-6d-zcx" secondAttribute="leading" constant="8" id="NIE-Sz-w9g"/>
+                <constraint firstAttribute="bottom" secondItem="fwn-aj-9ZY" secondAttribute="bottom" constant="8" id="SEb-UI-LAS"/>
+            </constraints>
+            <size key="customSize" width="126" height="41"/>
+            <connections>
+                <outlet property="hotRecBtn" destination="fwn-aj-9ZY" id="vvM-5Z-LAu"/>
+            </connections>
+            <point key="canvasLocation" x="136" y="-39.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

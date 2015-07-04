@@ -1,0 +1,312 @@
+package com.qianfeng.appurl;
+
+import android.R.integer;
+
+public class AppUrl {
+
+/**
+* 一、推荐：
+*/
+public static final String URL_RECOMMEND = "http://api.breadtrip.com/featured";
+public static final String URL_RECOMMDEND = "http://api.breadtrip.com/featured";
+http://api.breadtrip.com/v5/index/?is_ipad=0&lat=40.03829805841082&lng=116.3597500797139&sign=57955f70436a5809875ffe18ffca159d
+/**
+* 点击viewPager 后进去的接口 评论部分
+*/
+public static final String urlComment = "http://breadtrip.com/btcomment/?uri=dest-topic-id_70&count=10";
+
+/**
+* 最新热门游记接口
+*/
+public static final String URL_HOT_TRAVELNOTE = "http://api.breadtrip.com/trips/hot/?start=0&count=20&is_ipad=true";
+
+/**
+* 加载更多
+*/
+// public static final String =
+// "http://api.breadtrip.com/trips/hot/?start=20&count=20&is_ipad=true";
+
+/**
+* 每一张图片点击之后详情
+*/
+public static final String URL_HOT_TRAVELNOTE_DETAIL = "http://api.breadtrip.com/trips/2388048952/waypoints/";
+
+// listview的item每一条再点
+// public static final String URL_RECOMMEND = "没有数据接口
+
+// 二、目的地：
+/**
+* 首页
+*/
+public static final String URL_DESTINATION = "http://api.breadtrip.com/destination/v2/?last_modified_since=0";
+
+/**
+* 点击头部 viewPager后进去的接口 评论部分
+*/
+public static final String URL_COMMENT = "http://breadtrip.com/btcomment/?uri=dest-topic-id_66&count=10";
+
+// http://breadtrip.com/btcomment/?uri=dest-topic-id_67&count=10
+
+/**
+* 目的地详情：
+*/
+public static final String URL_DESTINATION_DETAIL = "http://api.breadtrip.com/destination/place/3/81";
+// hottest_places字段 是0.概览里的viewPager
+
+/**
+* 0.概览
+*/
+public static final String URL_DESTINATION_SURVEY = "http://breadtrip.com/mobile/destination/3/81/intro";
+
+/**
+* 1.详情界面----------旅行地
+*/
+public static final String URL_DESTINATION_TRAVELSITE = "http://api.breadtrip.com/destination/place/poi/3/81";
+
+/**
+* 2.详情界面----------旅程
+*/
+public static final String URL_DESTINATION_TRIP = "http://api.breadtrip.com/destination/place/3/81/trips/?start=0&count=20";
+
+/**
+* 旅程详情--------------
+*/
+public static final String URL_DESTINATION_TRIPDETAIL = "http://api.breadtrip.com/trips/2387905609/waypoints";
+
+/**
+* 3.详情界面----------动态
+*/
+public static final String URL_DESTINATION_DYNAMIC = "http://api.breadtrip.com/destination/place/3/81/feed/?count=20";
+/**
+* -----动态详情
+*/
+// public static final String
+// ="http://api.breadtrip.com/trips/2407533857/waypoints";
+
+/**
+* 4.详情界面--------- 图片
+* http://api.breadtrip.com/destination/place/1/CH/photos/
+* ?start=21&count=21&gallery_mode=true
+*/
+public static final String URL_DESTINATION_PICTURE = "http://api.breadtrip.com/destination/place/3/81/photos/?start=0&count=21&gallery_mode=true";
+
+/**
+* 5.详情界面---------贴士
+*/
+public static final String URL_DESTINATION_TIPS = "http://api.breadtrip.com/destination/place/3/81/tips/?start=0&count=20";
+// http://api.breadtrip.com/destination/place/3/81/tips/?start=0&count=20&tag_id=3";
+
+// tag_id =
+// -------------6 ：景点
+// -------------3 ：购物
+// -------------4 ：天气
+// -------------10 ：语言
+// -------------7 ：美食
+// -------------8 ：住宿
+// -------------5 ：交通
+// --------------1 ：其他
+
+/**
+* 附近 ---- 景点
+*/
+public static final String NEARBY_SIGHT = "http://api.breadtrip.com/place/pois/nearby/?category=11&start=0&count=20&latitude=40.03562533913214&longitude=116.3642014529953";
+
+/**
+* 附近 ---- 餐厅
+*/
+public static final String NEARBY_RESTAURANT = "http://api.breadtrip.com/place/pois/nearby/?category=5&start=0&count=20&latitude=40.03562533913214&longitude=116.3642014529953";
+
+/**
+* 附近 ---- 购物
+*/
+public static final String NEARY_SHOPPING = "http://api.breadtrip.com/place/pois/nearby/?category=6&start=0&count=20&latitude=40.03562533913214&longitude=116.3642014529953";
+
+/**
+* 附近 ---- 住宿
+*/
+public static final String NEARY_STAY = "http://api.breadtrip.com/place/pois/nearby/?category=10&start=0&count=20&latitude=40.03571334094478&longitude=116.3637764529953";
+
+/**
+* 附近 ---- 动态
+*/
+public static final String NEARBY_DYNAMIC = "http://api.breadtrip.com/feeds/around/?lat=40.03571334094478&lng=116.3637764529953&count=20&shift=false";
+
+// 三、特价
+// 进来默认是全部
+public static final String SALE_ALL = "http://breadtrip.com/tp/products/?category=&dest=&start=&depart=&page=1";
+
+// 点击上面的按钮 周边游
+/**
+* 周边游——自由行
+*/
+public static final String SALE_ARROUND_FREE = "http://breadtrip.com/tp/products/?category=free_walker&dest=&start=&depart=&page=1";
+/**
+* 周边游——达人带队
+*/
+public static final String SALE_ARROUND_TALENT_LEADER = "http://breadtrip.com/tp/products/?category=talent_leader&dest=&start=&depart=&page=1";
+
+/**
+* 周边游——当地游
+*/
+public static final String SALE_ARROUND_NEARBY = "http://breadtrip.com/tp/products/?category=nearby&dest=&start=&depart=&page=1";
+
+/**
+* 周边游——团队游
+*/
+public static final String SALE_ARROUND_TREAM = "http://breadtrip.com/tp/products/?category=team_travel&dest=&start=&depart=&page=1";
+/**
+* 周边游——周边游
+*/
+public static final String SALE_ARROUND_LOCAL = "http://breadtrip.com/tp/products/?category=local_deal&dest=&start=&depart=&page=1";
+
+// 目的地：
+// 国内
+// http://breadtrip.com/tp/products/?category=local_deal&dest=%E5%9B%BD%E5%86%85&start=&depart=&page=1";
+// 东南亚
+// http://breadtrip.com/tp/products/?category=local_deal&dest=%E4%B8%9C%E5%8D%97%E4%BA%9A&start=&depart=&page=1";
+// 日韩
+// http://breadtrip.com/tp/products/?category=&dest=%E6%97%A5%E9%9F%A9&start=&depart=&page=1";
+// 港澳台
+// http://breadtrip.com/tp/products/?category=&dest=%E6%B8%AF%E6%BE%B3%E5%8F%B0&start=&depart=&page=1";
+// 欧洲
+// http://breadtrip.com/tp/products/?category=&dest=%E6%AC%A7%E6%B4%B2&start=&depart=&page=1";
+// 南亚
+// http://breadtrip.com/tp/products/?category=&dest=%E5%8D%97%E4%BA%9A&start=&depart=&page=1";
+
+// 出发城市：
+
+// /////////////////////////////////////////////////////////////////////////////////////////
+
+/**
+* @author John 用于目的地fragment跳详情界面传地址 overall
+*
+*         "http://breadtrip.com/mobile/destination/3/81/intro"
+*/
+
+public static String getDestinationOverUrl(String url) {
+
+return "http://breadtrip.com/mobile/destination/" + url + "intro/";
+}
+
+/**
+* @author lxfeng 获取加载所有热门游记的地址
+*/
+public static String getAllHotTravel(int pageNum) {
+return "http://api.breadtrip.com/trips/hot/?start=" + pageNum + "&count=20&is_ipad=true";
+}
+
+public static String getHotTravelNoteDetail(long id) {
+return "http://api.breadtrip.com/trips/" + id + "/waypoints";
+}
+
+
+/**
+*
+* http://api.breadtrip.com/destination/place/3/81/tips/?start=0&count=20
+* @param url
+* @param start
+* @return
+*/
+public static String getDestinationTipUrl(String url, int start) {
+
+return "http://api.breadtrip.com/destination/place/" + url + "tips/?start=" + start + "&count=20";
+}
+
+public static String getDestinationTripUrl(String url, int start) {
+
+return "http://api.breadtrip.com/destination/place/" + url + "trips/?start=" + start + "&count=20";
+}
+
+/**
+* @author John 用于目的地fragment跳详情界面传地址 picture
+*         http://api.breadtrip.com/destination
+*         /place/3/81/photos/?start=0&count=21&gallery_mode=true
+*/
+
+public static String getDestinationPictureUrl(String url, int start) {
+
+return "http://api.breadtrip.com/destination/place/" + url + "photos/?start=" + start + "&count=21&gallery_mode=true";
+}
+
+/**
+* @author John 用于目的地fragment跳详情界面传地址 dynamic
+*         http://api.breadtrip.com/destination/place/3/81/feed/?count=20
+*/
+public static String getDestinationDynamicUrl(String url, int start) {
+
+return "http://api.breadtrip.com/destination/place/" + url + "feed/?count=20";
+}
+
+// ////////////////////////////////////////////////////////////////
+// 附近
+/**
+* @author John 景点
+*         http://api.breadtrip.com/place/pois/nearby/?category=11&start
+*         =0&count
+*         =20&latitude=40.03562533913214&longitude=116.3642014529953
+*
+*/
+
+public static String getDestinationNearbySight(double latitude, double longitude) {
+return "http://api.breadtrip.com/place/pois/nearby/?category=11&count=20" + "&latitude=" + latitude + "&longitude=" + longitude + "&start=";
+
+}
+
+/*
+* @author John 餐厅
+* http://api.breadtrip.com/place/pois/nearby/?category=11&start =0&count
+* =20&latitude=40.03562533913214&longitude=116.3642014529953
+*/
+
+public static String getDestinationNearbyCafe(double latitude, double longitude) {
+return "http://api.breadtrip.com/place/pois/nearby/?category=5&count=20" + "&latitude=" + latitude + "&longitude=" + longitude + "&start=";
+
+}
+
+/**
+* @author John 购物
+*         http://api.breadtrip.com/place/pois/nearby/?category=11&start
+*         =0&count
+*         =20&latitude=40.03562533913214&longitude=116.3642014529953
+*
+*/
+
+public static String getDestinationNearbyShop(double latitude, double longitude) {
+return "http://api.breadtrip.com/place/pois/nearby/?category=6&count=20" + "&latitude=" + latitude + "&longitude=" + longitude + "&start=";
+
+}
+
+/**
+* @author John 住宿
+*         http://api.breadtrip.com/place/pois/nearby/?category=11&start
+*         =0&count
+*         =20&latitude=40.03562533913214&longitude=116.3642014529953
+*
+*/
+
+public static String getDestinationNearbyRest(double latitude, double longitude) {
+return "http://api.breadtrip.com/place/pois/nearby/?category=10&count=20" + "&latitude=" + latitude + "&longitude=" + longitude + "&start=";
+
+}
+
+/**
+* 附近 ---- 动态
+* http://api.breadtrip.com/feeds/around/?lat=40.03571334094478&lng
+* =116.3637764529953&count=20&shift=false";
+*/
+
+public static String getDestinationNearbyDynamic(double latitude, double longitude) {
+return "http://api.breadtrip.com/feeds/around/?lat=" + latitude + "&lng=" + longitude + "&shift=false&count=";
+
+}
+
+public static String getSaleMore(int page) {
+return "http://breadtrip.com/tp/products/?category=&dest=&start=&depart=&page=" + page;
+}
+
+
+public static String getSift(int start){
+return "http://api.breadtrip.com/featured/photos/?start="+start+"&count=12";
+}
+
+}
